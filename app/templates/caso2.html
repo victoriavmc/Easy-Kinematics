@@ -1,0 +1,853 @@
+{% extends "layout.html" %} {% set active_page = "caso2" %} {% block content %}
+<!-- Contenido específico de la página de inicio -->
+<div class="container">
+  <div class="row row-30 justify-content-center">
+    <div class="col-sm-9 col-md-5 cube-classic-wrap">
+      <h2 class="wow fadeInLeft">
+        Trayectoria Parabólica de los Proyectiles
+        <br class="d-none d-md-block" /><span class="text-primary">(MRU)</span>
+        y <span class="text-primary">(MRUA)</span>
+      </h2>
+      <div class="cube-classic cube-classic-1">
+        <span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span
+        ><span class="cube-classic-item"></span>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-md-10 col-lg-8">
+          <!-- Introducción -->
+          <div class="card shadow-sm mb-4 wow fadeInRight">
+            <div class="card-body">
+              <p class="mb-3">
+                Se describe el lanzamiento de un proyectil de forma horizontal
+                desde una altura <strong>h</strong>, despreciando la resistencia
+                del aire y sin influencia de viento, sobre una superficie plana.
+              </p>
+              <p>
+                La clave para analizar el movimiento es descomponerlo en dos
+                componentes: una horizontal (MRU) y una vertical (MRUA). Esto
+                permite aplicar las ecuaciones de movimiento correspondientes de
+                forma independiente.
+              </p>
+            </div>
+          </div>
+
+          <!-- Principio de Independencia de Galileo -->
+          <div class="mb-4 p-4 bg-light rounded">
+            <h4 class="text-primary">
+              <i class="fas fa-unlink mr-2"></i>Principio de Independencia de
+              Galileo
+            </h4>
+            <div class="pl-4 border-left border-primary">
+              <p>
+                Galileo estableció que los movimientos en ejes perpendiculares
+                son independientes:
+              </p>
+              <div class="row mt-3">
+                <!-- Movimiento horizontal (MRU) -->
+                <div class="col-md-6">
+                  <div class="card h-100 border-primary">
+                    <div class="card-body">
+                      <h5 class="card-title text-center text-primary">
+                        <i class="fas fa-arrows-alt-h mr-2"></i>Eje X (MRU)
+                      </h5>
+                      <ul class="fa-ul">
+                        <li>
+                          <span class="fa-li"
+                            ><i class="fas fa-check text-success"></i
+                          ></span>
+                          No hay aceleración (aₓ = 0)
+                        </li>
+                        <li>
+                          <span class="fa-li"
+                            ><i class="fas fa-check text-success"></i
+                          ></span>
+                          Velocidad constante: vₓ = v₀·cosθ
+                        </li>
+                        <li>
+                          <span class="fa-li"
+                            ><i class="fas fa-check text-success"></i
+                          ></span>
+                          Ecuación: x(t) = v₀·cosθ·t
+                        </li>
+                      </ul>
+                      <p class="small text-muted">
+                        Al no existir aceleración en x, la velocidad permanece
+                        constante, y la distancia recorrida es directamente
+                        proporcional al tiempo.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Movimiento vertical (MRUA) -->
+                <div class="col-md-6">
+                  <div class="card h-100 border-danger">
+                    <div class="card-body">
+                      <h5 class="card-title text-center text-danger">
+                        <i class="fas fa-arrows-alt-v mr-2"></i>Eje Y (MRUA)
+                      </h5>
+                      <ul class="fa-ul">
+                        <li>
+                          <span class="fa-li"
+                            ><i class="fas fa-check text-success"></i
+                          ></span>
+                          Aceleración constante: aᵧ = -g
+                        </li>
+                        <li>
+                          <span class="fa-li"
+                            ><i class="fas fa-check text-success"></i
+                          ></span>
+                          Velocidad variable: vᵧ = v₀·sinθ - gt
+                        </li>
+                        <li>
+                          <span class="fa-li"
+                            ><i class="fas fa-check text-success"></i
+                          ></span>
+                          Ecuación: y(t) = v₀·sinθ·t - ½gt²
+                        </li>
+                      </ul>
+                      <p class="small text-muted">
+                        La aceleración de la gravedad modifica la componente
+                        vertical, provocando una variación en la velocidad y,
+                        por ello, la posición vertical sigue una función
+                        cuadrática en el tiempo.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Conceptos Clave: Explicación y Suposiciones -->
+          <div class="card shadow-sm mb-4 wow fadeInRight">
+            <div class="card-body">
+              <h4 class="h5 text-primary mb-3">Conceptos Clave</h4>
+              <div class="alert alert-info">
+                <p class="mb-0">
+                  La trayectoria parabólica surge al combinar el movimiento
+                  horizontal uniforme con el movimiento vertical acelerado,
+                  permitiendo analizar cada componente de forma independiente.
+                </p>
+              </div>
+              <div class="row">
+                <!-- Suposiciones clave -->
+                <div class="col-md-6">
+                  <div class="p-3 border rounded mb-3">
+                    <h6 class="text-primary">
+                      <i class="fas fa-check-circle mr-2"></i>Suposiciones clave
+                    </h6>
+                    <ul class="mb-0">
+                      <li>Resistencia del aire despreciable</li>
+                      <li>Aceleración gravitatoria constante</li>
+                      <li>Superficie horizontal</li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Consejos para el análisis -->
+                <div class="col-md-6">
+                  <div class="p-3 border rounded mb-3">
+                    <h6 class="text-primary">
+                      <i class="fas fa-lightbulb mr-2"></i>Consejos
+                    </h6>
+                    <ul class="mb-0">
+                      <li>Analizar las componentes x e y por separado</li>
+                      <li>El tiempo es común en ambos movimientos</li>
+                      <li>En la altura máxima, v<sub>y</sub> = 0</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Características del Movimiento -->
+          <div class="card shadow-sm mb-4 wow fadeInRight">
+            <div class="card-header bg-primary text-white">
+              <h2 class="h4 mb-0">Características del Movimiento</h2>
+            </div>
+            <div class="card-body">
+              <p class="mb-3">
+                El tiro parabólico horizontal se caracteriza por la
+                independencia de los movimientos en ambos ejes:
+              </p>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="alert alert-light">
+                    <h5 class="alert-heading">
+                      <i class="fas fa-arrows-alt-h mr-2"></i>Eje X
+                    </h5>
+                    <p class="mb-0">Movimiento Rectilíneo Uniforme (MRU)</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="alert alert-light">
+                    <h5 class="alert-heading">
+                      <i class="fas fa-arrows-alt-v mr-2"></i>Eje Y
+                    </h5>
+                    <p class="mb-0">
+                      Movimiento Rectilíneo Uniformemente Acelerado (MRUA)
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <ul class="list-group list-group-flush mt-3">
+                <li class="list-group-item">
+                  <i class="fas fa-tachometer-alt mr-3 text-primary"></i>
+                  <strong>Velocidad:</strong> Inicialmente horizontal.
+                </li>
+                <li class="list-group-item">
+                  <i class="fas fa-chart-area mr-3 text-primary"></i>
+                  <strong>Plano de Movimiento:</strong> Bidimensional (ejes x e
+                  y).
+                </li>
+                <li class="list-group-item">
+                  <i class="fas fa-mountain mr-3 text-primary"></i>
+                  <strong>Altura:</strong> Lanzamiento desde una altura
+                  <strong>h</strong>.
+                </li>
+                <li class="list-group-item">
+                  <i class="far fa-clock mr-3 text-primary"></i>
+                  <strong>Tiempo de vuelo:</strong> Determinado únicamente por
+                  la altura.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Fórmulas y Descomposición Vectorial -->
+          <div class="card shadow-sm mb-4 wow fadeInRight">
+            <div class="card-header bg-primary text-white">
+              <h2 class="h4 mb-0">
+                <i class="fas fa-square-root-alt mr-2"></i>Fórmulas y
+                Descomposición
+              </h2>
+            </div>
+            <div class="card-body">
+              <!-- Descomposición Vectorial -->
+              <div class="mb-4">
+                <h4 class="h5 text-primary">
+                  <i class="fas fa-project-diagram mr-2"></i>Descomposición
+                  Vectorial
+                </h4>
+                <div class="row">
+                  <!-- Componente Horizontal -->
+                  <div class="col-md-6">
+                    <div
+                      class="bg-light p-3 rounded mb-3 border-left-primary border-left-4"
+                    >
+                      <p class="font-weight-bold mb-2">
+                        Componente Horizontal (v<sub>0x</sub>):
+                      </p>
+                      <div class="text-center">
+                        <code>v<sub>0x</sub> = v<sub>0</sub>·cosθ</code>
+                      </div>
+                      <p class="small mt-2 mb-0">
+                        <strong>Razonamiento:</strong> Al no haber aceleración
+                        en x, la proyección horizontal se mantiene constante.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Componente Vertical -->
+                  <div class="col-md-6">
+                    <div
+                      class="bg-light p-3 rounded mb-3 border-left-danger border-left-4"
+                    >
+                      <p class="font-weight-bold mb-2">
+                        Componente Vertical (v<sub>0y</sub>):
+                      </p>
+                      <div class="text-center">
+                        <code>v<sub>0y</sub> = v<sub>0</sub>·sinθ</code>
+                      </div>
+                      <p class="small mt-2 mb-0">
+                        <strong>Razonamiento:</strong> La proyección vertical se
+                        ve afectada por la gravedad, por ello varía a lo largo
+                        del tiempo.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Parámetros y Ecuaciones -->
+              <div class="mb-4">
+                <h4 class="h5 text-primary">
+                  <i class="fas fa-key mr-2"></i>Parámetros y Ecuaciones
+                </h4>
+                <div class="row">
+                  <!-- Tiempo de Vuelo -->
+                  <div class="col-md-4">
+                    <div class="bg-light p-3 rounded mb-3 h-100">
+                      <p class="font-weight-bold mb-2">
+                        <i class="far fa-clock mr-2"></i>Tiempo de Vuelo
+                      </p>
+                      <div class="text-center">
+                        <code>t = √(2h/g)</code>
+                      </div>
+                      <p class="small mt-2 mb-0">
+                        <strong>Razonamiento:</strong> Se deriva de la ecuación
+                        de caída libre, donde la velocidad inicial vertical es
+                        cero.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Alcance Máximo -->
+                  <div class="col-md-4">
+                    <div class="bg-light p-3 rounded mb-3 h-100">
+                      <p class="font-weight-bold mb-2">
+                        <i class="fas fa-arrows-alt-h mr-2"></i>Alcance Máximo
+                      </p>
+                      <div class="text-center">
+                        <code>x = v₀·cosθ·t</code>
+                      </div>
+                      <p class="small mt-2 mb-0">
+                        <strong>Razonamiento:</strong> Se obtiene multiplicando
+                        la velocidad horizontal constante por el tiempo de
+                        vuelo.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Altura Máxima -->
+                  <div class="col-md-4">
+                    <div class="bg-light p-3 rounded mb-3 h-100">
+                      <p class="font-weight-bold mb-2">
+                        <i class="fas fa-mountain mr-2"></i>Altura Máxima
+                      </p>
+                      <div class="text-center">
+                        <code>h<sub>max</sub> = (v₀·sinθ)²/(2g)</code>
+                      </div>
+                      <p class="small mt-2 mb-0">
+                        <strong>Razonamiento:</strong> En el punto más alto, la
+                        velocidad vertical es cero. Aplicando la ecuación de
+                        MRUA se despeja la altura máxima.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Ecuación de la Trayectoria -->
+              <div class="mb-4">
+                <h4 class="h5 text-primary">
+                  <i class="fas fa-map-marked-alt mr-2"></i>Ecuación de la
+                  Trayectoria
+                </h4>
+                <div class="bg-light p-3 rounded">
+                  <div class="text-center mb-2">
+                    <code>y(x) = x·tanθ - [g/(2v₀²cos²θ)]·x²</code>
+                  </div>
+                  <p class="small mb-0">
+                    <strong>Razonamiento:</strong> Se elimina el parámetro
+                    tiempo de las ecuaciones x(t) e y(t), utilizando la
+                    identidad trigonométrica
+                    <code>1/cos²θ = sec²θ = 1+tan²θ</code>, obteniéndose una
+                    parábola de la forma <code>y = ax - bx²</code>.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Metodología de Cálculo -->
+          <div class="mb-4 p-4 bg-light rounded">
+            <h4 class="text-success">
+              <i class="fas fa-tasks mr-2"></i>Metodología de Cálculo
+            </h4>
+            <div class="steps">
+              <!-- Tiempo de Caída -->
+              <div class="step mb-4">
+                <div class="step-content">
+                  <h5 class="mb-1">Tiempo de Caída</h5>
+                  <p class="mb-2">Determinar el tiempo hasta el impacto:</p>
+                  <div class="text-center my-2 bg-white p-2 rounded border">
+                    <code>t = √(2h/g)</code>
+                  </div>
+                  <p class="small mb-0">
+                    <strong>Razonamiento:</strong> Se obtiene de la ecuación de
+                    caída libre, ya que la velocidad inicial vertical es cero.
+                  </p>
+                </div>
+              </div>
+              <!-- Distancia Horizontal -->
+              <div class="step mb-4">
+                <div class="step-content">
+                  <h5 class="mb-1">Distancia Horizontal</h5>
+                  <p class="mb-2">Calcular el alcance del proyectil:</p>
+                  <div class="text-center my-2 bg-white p-2 rounded border">
+                    <code>x = v₀·t = v₀·√(2h/g)</code>
+                  </div>
+                  <p class="small mb-0">
+                    <strong>Razonamiento:</strong> Se utiliza la relación del
+                    movimiento horizontal (MRU), donde la distancia es el
+                    producto de la velocidad horizontal y el tiempo de caída.
+                  </p>
+                </div>
+              </div>
+              <!-- Velocidad Vertical al Impacto -->
+              <div class="step mb-4">
+                <div class="step-content">
+                  <h5 class="mb-1">Velocidad Vertical al Impacto</h5>
+                  <p class="mb-2">Calcular la componente vertical final:</p>
+                  <div class="text-center my-2 bg-white p-2 rounded border">
+                    <code>vᵧ = -√(2gh)</code>
+                  </div>
+                  <p class="small mb-0">
+                    <strong>Razonamiento:</strong> Se utiliza la ecuación de
+                    MRUA para determinar la velocidad vertical al impactar,
+                    considerando que el lanzamiento horizontal implica v₀ᵧ = 0.
+                  </p>
+                </div>
+              </div>
+              <!-- Velocidad Total al Impacto -->
+              <div class="step mb-4">
+                <div class="step-content">
+                  <h5 class="mb-1">Velocidad Total al Impacto</h5>
+                  <p class="mb-2">
+                    Calcular la magnitud de la velocidad resultante:
+                  </p>
+                  <div class="text-center my-2 bg-white p-2 rounded border">
+                    <code>v = √(v₀² + 2gh)</code>
+                  </div>
+                  <p class="small mb-0">
+                    <strong>Razonamiento:</strong> Se realiza la suma vectorial
+                    de la componente horizontal (constante) y la vertical
+                    (obtenida por MRUA).
+                  </p>
+                </div>
+              </div>
+              <!-- Ángulo de Impacto -->
+              <div class="step mb-4">
+                <div class="step-content">
+                  <h5 class="mb-1">Ángulo de Impacto</h5>
+                  <p class="mb-2">
+                    Determinar la inclinación en el instante del impacto:
+                  </p>
+                  <div class="text-center my-2 bg-white p-2 rounded border">
+                    <code>φ = arctan(√(2gh)/v₀)</code>
+                  </div>
+                  <p class="small mb-0">
+                    <strong>Razonamiento:</strong> Se usa la relación
+                    trigonométrica entre la componente vertical y horizontal
+                    para obtener el ángulo.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Explicación de la Secuencia Lógica -->
+            <div class="alert alert-info mt-4">
+              <h6 class="mb-2">
+                <i class="fas fa-lightbulb mr-2"></i>Secuencia Lógica
+              </h6>
+              <ol class="mb-0">
+                <li>
+                  <strong>Determinar el tiempo de caída:</strong>Es el primer
+                  paso porque el tiempo que tarda el proyectil en llegar al
+                  suelo se determina únicamente por la altura inicial y la
+                  aceleración de la gravedad. Este tiempo es común a ambos ejes
+                  y sirve de base para calcular las demás magnitudes.
+                </li>
+                <li>
+                  <strong>Calcular la distancia horizontal: </strong>Es el
+                  primer paso porque el tiempo que tarda el proyectil en llegar
+                  al suelo se determina únicamente por la altura inicial y la
+                  aceleración de la gravedad. Este tiempo es común a ambos ejes
+                  y sirve de base para calcular las demás magnitudes.
+                </li>
+                <li>
+                  <strong>Calcular la velocidad vertical al impacto:</strong> La
+                  velocidad vertical final depende únicamente de la aceleración
+                  gravitatoria y la altura desde la que se lanza el proyectil
+                  (dado que la velocidad inicial vertical es nula en un
+                  lanzamiento horizontal). Este cálculo permite conocer cómo la
+                  gravedad afecta la caída.
+                </li>
+                <li>
+                  <strong>Obtener la velocidad total del impacto:</strong>
+                  Conociendo las componentes horizontal y vertical, se combinan
+                  mediante la suma vectorial para determinar la magnitud de la
+                  velocidad total al impacto. Este paso integra ambos
+                  movimientos independientes en un único valor representativo
+                  del estado final.
+                </li>
+                <li>
+                  <strong>Determinar el ángulo de impacto: </strong>Finalmente,
+                  utilizando la relación entre las componentes vertical y
+                  horizontal, se calcula el ángulo con el que el proyectil
+                  impacta el suelo. Este ángulo se obtiene aplicando la función
+                  arctan, lo que permite visualizar la inclinación resultante de
+                  la combinación de ambos movimientos.
+                </li>
+              </ol>
+            </div>
+          </div>
+
+          <!-- Calculadora // PARTE EXTRA -->
+
+          <div class="container mt-4">
+            <div class="card shadow-lg">
+              <div class="card-header bg-primary text-white">
+                <h3 class="mb-0">
+                  <i class="fas fa-project-diagram mr-2"></i>Calculadora -
+                  Trayectoria Proyectil Horizontal
+                </h3>
+              </div>
+              <div class="card-body">
+                <div class="alert alert-info">
+                  <p class="mb-0">
+                    Esta calculadora permite ingresar la altura desde la cual se
+                    lanza un objeto de forma horizontal. Si la altura se ingresa
+                    en kilómetros, se convertirá automáticamente a metros. Del
+                    mismo modo, la velocidad inicial se ajustará a metros por
+                    segundo (m/s) si es necesario. Se asume un escenario ideal
+                    sin resistencia del aire ni viento, por lo que los cálculos
+                    se basan únicamente en la gravedad.
+                  </p>
+                </div>
+
+                <form action="" method="post" class="mt-4">
+                  <!-- Altura -->
+                  <div class="form-group row">
+                    <label
+                      for="altura"
+                      class="col-md-3 col-form-label font-weight-bold"
+                    >
+                      <i class="fas fa-mountain mr-2"></i>Altura inicial
+                    </label>
+                    <div class="col-md-9">
+                      <div class="input-group">
+                        <input
+                          type="number"
+                          class="form-control"
+                          id="altura"
+                          name="altura"
+                          step="any"
+                          required
+                          placeholder="Ingrese la altura"
+                        />
+                        <div class="input-group-append">
+                          <select
+                            class="form-control custom-select"
+                            id="unidadAltura"
+                            name="medidaAltura"
+                          >
+                            <option value="metros">m</option>
+                            <option value="kilometros">km</option>
+                          </select>
+                        </div>
+                      </div>
+                      <small class="form-text text-muted">
+                        Se convertirá automáticamente a metros
+                      </small>
+                    </div>
+                  </div>
+
+                  <!-- Velocidad -->
+                  <div class="form-group row">
+                    <label
+                      for="velocidad"
+                      class="col-md-3 col-form-label font-weight-bold"
+                    >
+                      <i class="fas fa-tachometer-alt mr-2"></i>Velocidad
+                      inicial
+                    </label>
+                    <div class="col-md-9">
+                      <div class="input-group">
+                        <input
+                          type="number"
+                          class="form-control"
+                          id="velocidad"
+                          name="velocidadInicial"
+                          step="any"
+                          required
+                          placeholder="Ingrese la velocidad"
+                        />
+                        <div class="input-group-append">
+                          <select
+                            class="form-control custom-select"
+                            id="unidadVelocidad"
+                            name="tipoVelocidadInicial"
+                          >
+                            <option value="m/s">m/s</option>
+                            <option value="km/h">km/h</option>
+                          </select>
+                        </div>
+                      </div>
+                      <small class="form-text text-muted">
+                        Se convertirá automáticamente a m/s
+                      </small>
+                    </div>
+                  </div>
+
+                  <!-- Botones -->
+                  <div class="form-group text-center mt-4">
+                    <button type="submit" class="btn btn-primary btn-lg mr-3">
+                      <i class="fas fa-calculator mr-2"></i>Calcular
+                    </button>
+                    <button
+                      type="reset"
+                      class="btn btn-outline-secondary btn-lg"
+                    >
+                      <i class="fas fa-eraser mr-2"></i>Limpiar
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!-- Resultados -->
+          <div class="container mt-4" id="resultados" style="padding: 0">
+            {% if resultado %}
+            <div class="card border-primary">
+              <div class="card-header bg-primary text-white">
+                <h3 class="mb-0">
+                  <i class="fas fa-chart-line"></i> Resultados del Movimiento
+                  Parabólico
+                </h3>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <!-- Información general -->
+                  <div class="col-md-6">
+                    <div class="card mb-3">
+                      <div class="card-header bg-light">
+                        <h5 class="mb-0">Datos Principales</h5>
+                      </div>
+                      <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                          <li
+                            class="list-group-item d-flex justify-content-between align-items-center"
+                          >
+                            <span>Altura utilizada:</span>
+                            <span class="badge badge-primary badge-pill">
+                              {{ resultado.altura|round(2) }} m
+                            </span>
+                          </li>
+                          <li
+                            class="list-group-item d-flex justify-content-between align-items-center"
+                          >
+                            <span>Velocidad inicial:</span>
+                            <span class="badge badge-info badge-pill">
+                              {{ resultado.velocidadInicial|round(2) }} m/s
+                            </span>
+                          </li>
+                          <li
+                            class="list-group-item d-flex justify-content-between align-items-center"
+                          >
+                            <span>Tiempo de caída:</span>
+                            <span class="badge badge-success badge-pill">
+                              {{ resultado.tiempoCaida|round(2) }} s
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Información detallada -->
+                  <div class="col-md-6">
+                    <div class="card">
+                      <div class="card-header bg-light">
+                        <h5 class="mb-0">Detalles del Movimiento</h5>
+                      </div>
+                      <div class="card-body">
+                        <!-- Distancia horizontal -->
+                        <div class="mb-3 p-3 border rounded bg-light">
+                          <h6 class="text-primary">
+                            <i class="fas fa-arrows-alt-h text-primary"></i>
+                            Distancia Horizontal
+                          </h6>
+                          <p class="small text-muted mb-2">
+                            Recorrida durante la caída
+                          </p>
+                          <div
+                            class="d-flex justify-content-between align-items-center"
+                          >
+                            <span>Valor:</span>
+                            <span class="font-weight-bold">
+                              {{ resultado.distanciaHorizontal|round(2) }} m
+                            </span>
+                          </div>
+                        </div>
+
+                        <!-- Velocidades -->
+                        <div class="p-3 border rounded bg-light">
+                          <h6 class="text-primary">
+                            <i class="fas fa-tachometer-alt text-primary"></i>
+                            Velocidades
+                          </h6>
+                          <ul class="list-unstyled small text-muted mb-2">
+                            <li>
+                              Al llegar al suelo: {{
+                              resultado.velocidadCaida|round(2) }} m/s
+                            </li>
+                            <li>
+                              Total: {{ resultado.velocidadTotal|round(2) }} m/s
+                            </li>
+                          </ul>
+                        </div>
+
+                        <!-- Ángulos -->
+                        <div class="mt-3 p-3 border rounded bg-light">
+                          <h6 class="text-primary">
+                            <i
+                              class="fas fa-angle-double-right text-primary"
+                            ></i>
+                            Ángulos
+                          </h6>
+                          <div class="row">
+                            <div class="col-6">
+                              <p class="small mb-1">En radianes:</p>
+                              <span class="font-weight-bold"
+                                >{{ resultado.angulo|round(2) }} rad</span
+                              >
+                            </div>
+                            <div class="col-6">
+                              <p class="small mb-1">En grados:</p>
+                              <span class="font-weight-bold"
+                                >{{ resultado.anguloE2|round(2) }}°</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {% elif error %}
+            <div class="alert alert-danger alert-dismissible fade show mt-3">
+              <strong><i class="fas fa-exclamation-circle"></i> Error:</strong>
+              {{ error }}
+              <button
+                type="button"
+                class="close"
+                data-dismiss="alert"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            {% endif %}
+          </div>
+          <div class="background-custom-1 bg-default"></div>
+          {% endblock %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% block scripts %}
+<script>
+  $(document).ready(function () {
+    // Scroll automático a resultados si existen
+    {% if resultado or error %}
+      setTimeout(function() {
+        document.getElementById('resultados').scrollIntoView({
+          behavior: 'smooth'
+        });
+      }, 100); // Pequeño retardo para asegurar que todo está cargado
+    {% endif %}
+  });
+</script>
+{% endblock %}

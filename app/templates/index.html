@@ -1,0 +1,70 @@
+{% extends "layout.html" %} {% set active_page = "index" %} {% block content %}
+<!-- Contenido específico de la página de inicio -->
+<div class="container">
+  <div
+    class="row-30 justify-content-center justify-content-lg-end align-items-md-center"
+  >
+    <!-- <div class="col-sm-8 col-md-6 wow blurIn"> -->
+    <div class="inset-xl-left-25">
+      <div class="subtitle-classic wow fadeInLeft">
+        <p class="text-carousel h5">Explicación de Casos</p>
+      </div>
+      <!-- Owl Carousel-->
+      <div
+        class="owl-carousel owl-style-1"
+        data-loop="true"
+        data-items="1"
+        data-nav="true"
+        id="owl-carousel"
+      >
+        <div class="cubo">
+          <h2 class="wow fadeInLeft" data-wow-delay=".1s">
+            Caso 1 - Cruce de Trenes
+            <span class="text-primary">(MRU)</span>
+          </h2>
+          <p class="wow fadeInLeft text-caso" id="project-description">
+            Este caso analiza cómo dos trenes que viajan en direcciones opuestas
+            con velocidades constantes terminan encontrándose. La ecuación
+            utilizada se basa en la relación distancia-tiempo, donde al sumar
+            las velocidades de ambos trenes en valor absoluto, podemos
+            determinar el tiempo exacto de encuentro.
+          </p>
+          <br />
+          <a
+            class="button button-default wow fadeInUp"
+            style="font-size: 20px"
+            href="{{ url_for('caso1') }}"
+            >Calculadora</a
+          >
+        </div>
+
+        <div class="cubo">
+          <h2 class="wow fadeInLeft" data-wow-delay=".1s">
+            Caso 2 - Tiro Parabólico Horizontal<span class="text-primary">
+              (MRU)</span
+            >
+            y <span class="text-primary">(MRUA)</span>
+          </h2>
+          <p class="wow fadeInLeft text-caso" id="project-description">
+            Este caso explica el movimiento de un proyectil lanzado
+            horizontalmente. Se descompone en un movimiento horizontal con
+            velocidad constante (MRU) y un movimiento vertical acelerado por la
+            gravedad (MRUA). La combinación de ambos genera una trayectoria
+            parabólica, donde se puede calcular el tiempo de caída y el alcance
+            horizontal.
+          </p>
+          <br />
+          <a
+            class="button button-default wow fadeInUp"
+            style="font-size: 20px"
+            href="{{ url_for('caso2') }}"
+            >Calculadora</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- </div> -->
+  </div>
+</div>
+<div class="background-custom-1 bg-default"></div>
+{% endblock %}
