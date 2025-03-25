@@ -17,6 +17,7 @@
 - [📏 Límites](#📏-límites)
 - [📊 Alcance](#📊-alcance)
 - [💻 Tecnologías](#💻-tecnologías)
+- [📸 Vista Previa](#📸-vista-previa)
 - [⚙️ Stack Tecnológico](#⚙️-stack-tecnológico)
 - [📢 Autora](#📢-autora)
 
@@ -42,8 +43,9 @@ Los estudiantes suelen enfrentar dificultades en la comprensión de la cinemáti
 
 Adjunto la documentación completa del proyecto:
 
-- [Documentación en Word](./docs/archivo.docx)
-- [Documentación en Pdf](./docs/archivo1.pdf)
+- [Documentación en Word](./docs/TP%20N°1%20-%20VictoriaVMC.docx)
+- [Documentación en Pdf](./docs/TP%20N°1%20-%20VictoriaVMC.pdf)
+- [Diseño Web](./docs/Easy%20Kinematics%20Responsive.pdf)
 
 ---
 
@@ -106,6 +108,10 @@ Brindar una herramienta de aprendizaje que permita comprender, resolver y visual
 
 ## 💻 **Tecnologías**
 
+Para el desarrollo de este proyecto se utilizó Python, ya que es uno de los lenguajes más óptimos para cálculos matemáticos y científicos. Facilita el manejo de operaciones algebraicas, ecuaciones diferenciales y cálculos simbólicos, lo que resulta esencial para la resolución de problemas cinemáticos.
+
+Además, se adoptó un enfoque basado en funciones reutilizables, lo que permite modularizar el código y evitar redundancias. Esto mejora la legibilidad, facilita la depuración y permite la escalabilidad del sistema. Cada cálculo clave, como la velocidad, aceleración o trayectoria, fue encapsulado en funciones específicas, lo que permite reutilizar la lógica en diferentes partes del proyecto sin necesidad de duplicar código.
+
 ### **Arquitectura**
 
 - Backend desarrollado en **Python con Flask**.
@@ -117,6 +123,45 @@ Brindar una herramienta de aprendizaje que permita comprender, resolver y visual
 - 📄 Manejo de datos en **JSON**.
 - 🎨 Estilos de **TemplateMonster**. Presenta **Bootstrap, CSS y HTML**.
 - 📜 Scripts dinámicos con **JavaScript**.
+
+---
+
+## 📸 **Vista Previa**
+
+<p align="center">
+  <b>Head</b><br>
+  <img src="./VistaPrevia/Easy%20Kinematics%20-%20Head.webp" alt="Head" width="500">
+</p>
+
+<p align="center">
+  <b>Index - Caso 1 (Trenes)</b><br>
+  <img src="./VistaPrevia/Easy%20Kinematics%20-%20Index%20-%20Tren.webp" alt="Index - Caso 1" width="500">
+</p>
+
+<p align="center">
+  <b>Index - Caso 2 (Movimiento Parabólico Horizontal)</b><br>
+  <img src="./VistaPrevia/Easy%20Kinematics%20-%20Index%20-%20Movimiento%20Parabólico%20Horizontal.webp" alt="Index - Caso 2" width="500">
+</p>
+
+<p align="center">
+  <b>Caso 1 - Trenes</b><br>
+  <img src="./VistaPrevia/Easy%20Kinematics%20-%20Tren.webp" alt="Caso 1 - Trenes" width="500">
+</p>
+
+<p align="center">
+  <b>Calculadora - Trenes</b><br>
+  <img src="./VistaPrevia/Easy%20Kinematics%20-%20Calculadora%20Tren.webp" alt="Calculadora - Trenes" width="500">
+</p>
+
+<p align="center">
+  <b>Caso 2 - Movimiento Parabólico Horizontal</b><br>
+  <img src="./VistaPrevia/Easy%20Kinematics%20-%20Movimiento%20Parabólico%20Horizontal.webp" alt="Caso 2 - Proyectil" width="500">
+</p>
+
+<p align="center">
+  <b>Calculadora - Movimiento Parabólico Horizontal</b><br>
+  <img src="./VistaPrevia/Easy%20Kinematics%20-%20Calculadora%20Movimiento%20Parabólico%20Horizontal.webp" alt="Calculadora - Proyectil" width="500">
+</p>
 
 ---
 
