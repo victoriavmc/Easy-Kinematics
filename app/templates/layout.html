@@ -290,11 +290,12 @@
           <div class="reference-container">
             <a
               class="reference-links"
-              target="_blank"
-              href="https://enfisica.com/cinematicas/movimiento-rectilineo-uniforme/"
+              href="#"
+              download="TP_N1_VictoriaVMC.pdf"
+              onclick="forceDownload(event, this.href, this.download)"
             >
               <span class="subtitle-classic wow"
-                >VictoriaVMC (2025). Documentación completa.</span
+                >VictoriaVMC (2025). Descargar Documentación Completa.</span
               >
             </a>
 
@@ -406,6 +407,18 @@
 
     <script src="{{ url_for('static', filename='js/core.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+    <script>
+      function forceDownload(event, url, filename) {
+        event.preventDefault(); // Evita la apertura del archivo en el navegador
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = filename;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
+    </script>
 
     {% block scripts %}{% endblock %}
   </body>
