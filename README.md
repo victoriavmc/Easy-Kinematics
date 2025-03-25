@@ -1,0 +1,151 @@
+# 🧠 **Easy Kinematics**
+
+<!-- Logo del proyecto (reemplazar URL) -->
+
+<p align="center">
+  <img src="./app/static/images/logo.webp" alt="logoSistema" width='200'>
+</p>
+
+---
+
+## 📑 **Índice**
+
+- [🔍 Descripción](#🔍-descripción)
+- [📎 Documentación](#📎-documentación)
+- [🎯 Objetivos](#🎯-objetivos)
+- [📋 Requerimientos](#📋-requerimientos)
+- [📏 Límites](#📏-límites)
+- [📊 Alcance](#📊-alcance)
+- [💻 Tecnologías](#💻-tecnologías)
+- [⚙️ Stack Tecnológico](#⚙️-stack-tecnológico)
+- [📢 Autora](#📢-autora)
+
+---
+
+## 🔍 **Descripción**
+
+Easy Kinematics (Cinemática Simplificada) es una herramienta educativa diseñada para ayudar a los estudiantes a comprender y resolver problemas de **Movimiento Rectilíneo Uniforme (MRU) y Movimiento Rectilíneo Uniformemente Acelerado (MRUA)**. Su propósito es facilitar el aprendizaje autónomo mediante una interfaz intuitiva que guía a los usuarios a través de la teoría y cálculos paso a paso.
+
+### **Problema Principal que Soluciona**
+
+Los estudiantes suelen enfrentar dificultades en la comprensión de la cinemática debido a la falta de recursos claros y didácticos. Easy Kinematics aborda este problema proporcionando una plataforma estructurada con explicaciones detalladas y automatización de cálculos.
+
+### **Beneficios Clave**
+
+- 📖 **Aprendizaje:** Explicaciones detalladas de los conceptos.
+- ⚡ **Automatización de cálculos:** Permite ingresar variables personalizadas y obtener resultados precisos.
+- 🔄 **Flexibilidad:** Soporte para diferentes unidades de medida.
+
+---
+
+## 📎 **Documentación**
+
+Adjunto la documentación completa del proyecto:
+
+- [Documentación en Word](./docs/archivo.docx)
+- [Documentación en Pdf](./docs/archivo1.pdf)
+
+---
+
+## 🎯 **Objetivos**
+
+### **Generales**
+
+Brindar una herramienta de aprendizaje que permita comprender, resolver y visualizar problemas de cinemática básica, reforzando el aprendizaje autónomo.
+
+### **Específicos**
+
+- Diseñar una interfaz intuitiva y fácil de usar.
+- Implementar un sistema de conversión de unidades (km a m, km/h a m/s).
+- Facilitar la resolución de problemas de cinemática mediante guías paso a paso.
+
+---
+
+## 📋 **Requerimientos**
+
+### 🔧 **Funcionales**
+
+- **Módulo de Problema de los Trenes:**
+
+  - Calcular el tiempo y punto de encuentro.
+  - Opción para definir si un tren tiene prioridad en el cálculo.
+  - Selección de unidades para distancia y velocidad.
+
+- **Módulo de Problema del Proyectil:**
+  - Calcular alcance y tiempo de caída.
+  - Opción para seleccionar unidades de velocidad inicial y altura.
+
+### 🚀 **No Funcionales**
+
+- **Rendimiento:** Procesamiento eficiente de cálculos.
+- **Escalabilidad:** Arquitectura modular para futuras mejoras.
+- **Usabilidad:** Interfaz clara con explicaciones detalladas.
+
+---
+
+## 📏 **Límites**
+
+- No se definirá prioridad para ningún tren en el cálculo de trayectorias o tiempos.
+- No se contemplarán salidas asincrónicas de los trenes; es decir, ambos trenes seguirán un esquema de salida predefinido.
+- El sistema permitirá un máximo de dos trenes en operación simultánea.
+- Se considerará únicamente un trayecto con dos estaciones: una de origen y otra de destino (A → B y B → A).
+- No se abordarán otros tipos de movimientos, como dinámica o rotación de los trenes. - - -
+- La aplicación estará diseñada para ejecutarse en un entorno local, sin disponibilidad como servicio web público.
+- No se implementará una base de datos; los cálculos se realizarán en tiempo real sin almacenamiento de información.
+- No se podrá hacer visualización gráfica de movimientos.
+
+---
+
+## 📊 **Alcance**
+
+- 📘 Explicación teórica de MRU y MRUA.
+- 🚆 Resolución del problema de encuentro entre trenes (MRU).
+- 🎯 Resolución del problema de trayectoria y tiempo de impacto de un proyectil en tiro parabólico horizontal (MRUA).
+
+---
+
+## 💻 **Tecnologías**
+
+### **Arquitectura**
+
+- Backend desarrollado en **Python con Flask**.
+- Frontend basado en **templates de TemplateMonster**.
+
+### **Herramientas**
+
+- 🔄 Control de versiones con **Git**.
+- 📄 Manejo de datos en **JSON**.
+- 🎨 Estilos de **TemplateMonster**. Presenta **Bootstrap, CSS y HTML**.
+- 📜 Scripts dinámicos con **JavaScript**.
+
+---
+
+## ⚙️ **Stack Tecnológico**
+
+<!-- Muestro con badges: -->
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask">
+  <img src="https://img.shields.io/badge/TemplateMonster-1A9900?style=for-the-badge&logo=adobe&logoColor=white" alt="TemplateMonster">
+  <img src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML">
+  <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+  <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap">
+</p>
+
+---
+
+## 📢 **Autora**
+
+<table>
+  <tr>
+    <!-- Añadir más colaboradores -->
+    <td align="center">
+      <a href="https://github.com/victoriavmc">
+        <img src="https://avatars.githubusercontent.com/u/94030658?v=4" width="100" alt="Avatar de VictoriaVMC"><br />
+        <sub><b>Victoria VMC</b></sub>
+      </a>
+    </td>
+  </tr>
+</table>
