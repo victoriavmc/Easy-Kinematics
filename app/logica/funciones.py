@@ -181,7 +181,7 @@ def calcularTrayectoriaProyectil(altura, velocidadInicial, tipoAltura, tipoVeloc
         return print("La velocidad ingresada no es valida.")
     else:
         if tipoVelocidadInicial == 'km/h':
-            velocidadInicial = conversorMsAKmH(velocidadInicial)
+            velocidadInicial = conversorKmHAms(velocidadInicial)
             tipoVelocidadInicial = 'm/s'
         else:
             pass
@@ -205,6 +205,8 @@ def calcularTrayectoriaProyectil(altura, velocidadInicial, tipoAltura, tipoVeloc
     anguloE2 = math.degrees(angulo)
     
     return {
+        "altura": altura,
+        "velocidadInicial": velocidadInicial,
         "tiempoCaida": round(tiempoCaida, 2),
         "distanciaHorizontal": round(distanciaHorizontal, 2),
         "altura": round(altura, 2),
