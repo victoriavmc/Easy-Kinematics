@@ -23,7 +23,7 @@
 
 ---
 
-## 🔍 **Descripción**
+<h2 id="🔍-descripción">🔍 Descripción</h2>
 
 Easy Kinematics (Cinemática Simplificada) es una herramienta educativa diseñada para ayudar a los estudiantes a comprender y resolver problemas de **Movimiento Rectilíneo Uniforme (MRU) y Movimiento Rectilíneo Uniformemente Acelerado (MRUA)**. Su propósito es facilitar el aprendizaje autónomo mediante una interfaz intuitiva que guía a los usuarios a través de la teoría y cálculos paso a paso.
 
@@ -39,7 +39,7 @@ Los estudiantes suelen enfrentar dificultades en la comprensión de la cinemáti
 
 ---
 
-## 📎 **Documentación**
+<h2 id="📎-documentación">📎 Documentación</h2>
 
 Adjunto la documentación completa del proyecto:
 
@@ -49,7 +49,7 @@ Adjunto la documentación completa del proyecto:
 
 ---
 
-## 🎯 **Objetivos**
+<h2 id="🎯-objetivos">🎯 Objetivos</h2>
 
 ### **Generales**
 
@@ -63,7 +63,7 @@ Brindar una herramienta de aprendizaje que permita comprender, resolver y visual
 
 ---
 
-## 📋 **Requerimientos**
+<h2 id="📋-requerimientos">📋 Requerimientos</h2>
 
 ### 🔧 **Funcionales**
 
@@ -85,7 +85,7 @@ Brindar una herramienta de aprendizaje que permita comprender, resolver y visual
 
 ---
 
-## 📏 **Límites**
+<h2 id="#📏-límites">📏 Límites</h2>
 
 - No se definirá prioridad para ningún tren en el cálculo de trayectorias o tiempos.
 - No se contemplarán salidas asincrónicas de los trenes; es decir, ambos trenes seguirán un esquema de salida predefinido.
@@ -98,7 +98,7 @@ Brindar una herramienta de aprendizaje que permita comprender, resolver y visual
 
 ---
 
-## 📊 **Alcance**
+<h2 id="#📊-alcance">📊 Alcance</h2>
 
 - 📘 Explicación teórica de MRU y MRUA.
 - 🚆 Resolución del problema de encuentro entre trenes (MRU).
@@ -106,7 +106,7 @@ Brindar una herramienta de aprendizaje que permita comprender, resolver y visual
 
 ---
 
-## 💻 **Tecnologías**
+<h2 id="#💻-tecnologías">💻 Tecnologías</h2>
 
 Para el desarrollo de este proyecto se utilizó Python, ya que es uno de los lenguajes más óptimos para cálculos matemáticos y científicos. Facilita el manejo de operaciones algebraicas, ecuaciones diferenciales y cálculos simbólicos, lo que resulta esencial para la resolución de problemas cinemáticos.
 
@@ -126,7 +126,7 @@ Además, se adoptó un enfoque basado en funciones reutilizables, lo que permite
 
 ---
 
-## 📸 **Vista Previa**
+<h2 id="#📸-vista-previa">📸 Vista Previa</h2>
 
 <p align="center">
   <b>Head</b><br>
@@ -165,7 +165,7 @@ Además, se adoptó un enfoque basado en funciones reutilizables, lo que permite
 
 ---
 
-## ⚙️ **Stack Tecnológico**
+<h2 id="#⚙️-stack-tecnológico">⚙️ Stack Tecnológico</h2>
 
 <!-- Muestro con badges: -->
 
@@ -181,7 +181,7 @@ Además, se adoptó un enfoque basado en funciones reutilizables, lo que permite
 
 ---
 
-## 📢 **Autora**
+<h2 id="#📢-autora">📢 Autora</h2>
 
 <table>
   <tr>
