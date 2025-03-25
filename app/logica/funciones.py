@@ -114,8 +114,6 @@ def calcularCruceEntreTrenes(trenes, distancia, tipoDistancia, hora):
         # Ya convertimos la distancia a km si hace falta
         if tipoDistancia =='m':
             distancia = conversorMKm(distancia)
-            #Guardo los cambios en la distancia y el tipo
-            distancia = distancia
             tipoDistancia = 'km'
         else:
             pass
